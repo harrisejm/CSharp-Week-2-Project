@@ -26,6 +26,14 @@ This is console app allows the user to enter an initial word and compare it to a
 
     - Example output: "hello appeared 2 times"
 
+- 4.) User inputs will not be affected by case-sensitivity or punctuation. The number of times the inputed word appears in the inputed string will be returned regardless of both of these differences.
+
+        - Example input:
+          Word: "hello"
+          String: "Hello. World? Hello: helLO! HELLO; hellO!"
+
+        - Example output: "hello appeared 5 times"
+
 
 ## Setup/Installation Requirements
 
