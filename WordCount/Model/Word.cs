@@ -8,22 +8,25 @@ namespace WordCounter
   public string _userString;
   public RepeatCounter(string userWord, string userString)
   {
-    _userWord = userWord;
-    _userString = userString;
+    _userWord = userWord.ToLower();
+    _userString = userString.ToLower();
   }
 
   public string test()
   {
-//  List<string> userString = new List<string>{}
-  string[]separator = {" ", ".", " "};
+  int finalOutput = 0;
+  string[]separator = {" ", ".", "?", "!", ";", ":"};
   string[]wordArr = _userString.Split(separator, StringSplitOptions.None);
-  return wordArr[0];
+  for (int index = 0; index < wordArr.Length; index++)
+  {
+    if (wordArr[index] == _userWord)
+    {
+      finalOutput += 1;
+    }
   }
 
-
-
-
-
+  return _userWord + " appears " + finalOutput + " times.";
+  }
 
 
   public string testOutput()

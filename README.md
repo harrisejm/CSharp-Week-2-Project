@@ -12,7 +12,11 @@ This is console app allows the user to enter an initial word and compare it to a
 
 - 1.) Allow user to input a word.
 
+   - Example input: "hello"
+
 - 2.) Allow user to input a string.
+
+  - Example input: "hello world thought I would say hello"
 
 - 3.) Inputed word will be compared against the inputed string. The number of times the inputed word appears in the inputed string will be returned.
 
