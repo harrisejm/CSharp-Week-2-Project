@@ -1,7 +1,6 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Collections.Generic;
 using System;
-
 using WordCounter;
 namespace WordCounter.Tests
 {
@@ -13,7 +12,7 @@ namespace WordCounter.Tests
     public void wordNumber()
     {
       RepeatCounter word = new RepeatCounter("Hello", "hi");
-      Assert.AreEqual("Hellohi" , word.testOutput());
+      Assert.AreEqual("Hellohi" , word.testOutput()); //Test MS TEST
     }
 
     [TestMethod]
@@ -36,7 +35,5 @@ namespace WordCounter.Tests
       RepeatCounter word = new RepeatCounter("Hello", "Hello. World? Hello: helLO! HELLO; hellO!");
       Assert.AreEqual("Hello appears 5 times." , word.test());
     }
-
-
   }
 }
