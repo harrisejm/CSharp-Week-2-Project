@@ -1,0 +1,13 @@
+/Users/Guest/Desktop/WordCount.Solution/WordCount.Tests/bin/Debug/netcoreapp1.1/WordCount.Tests.deps.json
+/Users/Guest/Desktop/WordCount.Solution/WordCount.Tests/bin/Debug/netcoreapp1.1/WordCount.Tests.runtimeconfig.json
+/Users/Guest/Desktop/WordCount.Solution/WordCount.Tests/bin/Debug/netcoreapp1.1/WordCount.Tests.runtimeconfig.dev.json
+/Users/Guest/Desktop/WordCount.Solution/WordCount.Tests/obj/Debug/netcoreapp1.1/WordCount.Tests.AssemblyInfo.cs
+/Users/Guest/Desktop/WordCount.Solution/WordCount.Tests/bin/Debug/netcoreapp1.1/Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+/Users/Guest/Desktop/WordCount.Solution/WordCount.Tests/bin/Debug/netcoreapp1.1/Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+/Users/Guest/Desktop/WordCount.Solution/WordCount.Tests/bin/Debug/netcoreapp1.1/Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+/Users/Guest/Desktop/WordCount.Solution/WordCount.Tests/bin/Debug/netcoreapp1.1/WordCount.Tests.dll
+/Users/Guest/Desktop/WordCount.Solution/WordCount.Tests/bin/Debug/netcoreapp1.1/WordCount.Tests.pdb
+/Users/Guest/Desktop/WordCount.Solution/WordCount.Tests/bin/Debug/netcoreapp1.1/WordCount.dll
+/Users/Guest/Desktop/WordCount.Solution/WordCount.Tests/bin/Debug/netcoreapp1.1/WordCount.pdb
+/Users/Guest/Desktop/WordCount.Solution/WordCount.Tests/obj/Debug/netcoreapp1.1/WordCount.Tests.dll
+/Users/Guest/Desktop/WordCount.Solution/WordCount.Tests/obj/Debug/netcoreapp1.1/WordCount.Tests.pdb

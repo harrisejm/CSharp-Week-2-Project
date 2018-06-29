@@ -1,0 +1,6 @@
+/Users/Guest/Desktop/WordCount.Solution/WordCount/bin/Debug/netcoreapp1.1/WordCount.deps.json
+/Users/Guest/Desktop/WordCount.Solution/WordCount/bin/Debug/netcoreapp1.1/WordCount.dll
+/Users/Guest/Desktop/WordCount.Solution/WordCount/bin/Debug/netcoreapp1.1/WordCount.pdb
+/Users/Guest/Desktop/WordCount.Solution/WordCount/obj/Debug/netcoreapp1.1/WordCount.AssemblyInfo.cs
+/Users/Guest/Desktop/WordCount.Solution/WordCount/obj/Debug/netcoreapp1.1/WordCount.dll
+/Users/Guest/Desktop/WordCount.Solution/WordCount/obj/Debug/netcoreapp1.1/WordCount.pdb
