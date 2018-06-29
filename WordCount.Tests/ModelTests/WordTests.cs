@@ -30,6 +30,13 @@ namespace WordCounter.Tests
       Assert.AreEqual("Hello appears 2 times." , word.test());
     }
 
+    [TestMethod]
+    public void testFinalOutput()
+    {
+      RepeatCounter word = new RepeatCounter("Hello", "Hello. World? Hello: helLO! HELLO; hellO!");
+      Assert.AreEqual("Hello appears 5 times." , word.test());
+    }
+
 
   }
 }
