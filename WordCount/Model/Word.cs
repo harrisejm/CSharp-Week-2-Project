@@ -12,11 +12,24 @@ namespace WordCounter
     _userString = userString;
   }
 
+  public string test()
+  {
+//  List<string> userString = new List<string>{}
+  string[]separator = {" ", ".", " "};
+  string[]wordArr = _userString.Split(separator, StringSplitOptions.None);
+  return wordArr[0];
+  }
+
+
+
+
+
+
+
   public string testOutput()
   {
     return _userWord + _userString;
   }
-
 
   }
 
@@ -24,9 +37,12 @@ namespace WordCounter
   {
     static void Main()
     {
-
-
-
+   Console.WriteLine("Enter Word");
+   string userInputWord = Console.ReadLine();
+   Console.WriteLine("Enter string");
+   string userInputString = Console.ReadLine();
+   RepeatCounter word = new RepeatCounter(userInputWord, userInputString);
+   Console.WriteLine(word.test());
 
 
     }

@@ -14,5 +14,13 @@ namespace WordCounter.Tests
       RepeatCounter word = new RepeatCounter("Hello", "hi");
       Assert.AreEqual("Hellohi" , word.testOutput());
     }
+
+    [TestMethod]
+    public void testArr()
+    {
+      RepeatCounter word = new RepeatCounter("Hello", "hi");
+      Assert.AreEqual("" , word.test());
+    }
+
   }
 }
