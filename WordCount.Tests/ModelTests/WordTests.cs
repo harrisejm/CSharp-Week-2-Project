@@ -12,28 +12,28 @@ namespace WordCounter.Tests
     public void wordNumber()
     {
       RepeatCounter word = new RepeatCounter("Hello", "hi");
-      Assert.AreEqual("Hellohi" , word.testOutput()); //Test MS TEST
+      Assert.AreEqual("hellohi" , word.testOutput()); //Test MS TEST
     }
 
     [TestMethod]
     public void testArr()
     {
       RepeatCounter word = new RepeatCounter("Hello", "Hello World Hello");
-      Assert.AreEqual("Hello" , word.test()); //test() return wordArr[0];
+      Assert.AreEqual("hello appears 2 times." , word.test()); //test() return wordArr[0];
     }
 
     [TestMethod]
     public void testFinalOutput()
     {
       RepeatCounter word = new RepeatCounter("Hello", "Hello World Hello");
-      Assert.AreEqual("Hello appears 2 times." , word.test());
+      Assert.AreEqual("hello appears 2 times." , word.test());
     }
 
     [TestMethod]
-    public void testFinalOutput()
+    public void testFinalOutput1()
     {
       RepeatCounter word = new RepeatCounter("Hello", "Hello. World? Hello: helLO! HELLO; hellO!");
-      Assert.AreEqual("Hello appears 5 times." , word.test());
+      Assert.AreEqual("hello appears 5 times." , word.test());
     }
   }
 }

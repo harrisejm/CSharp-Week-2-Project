@@ -4,3 +4,9 @@
 /Users/Guest/Desktop/WordCount.Solution/WordCount/obj/Debug/netcoreapp1.1/WordCount.AssemblyInfo.cs
 /Users/Guest/Desktop/WordCount.Solution/WordCount/obj/Debug/netcoreapp1.1/WordCount.dll
 /Users/Guest/Desktop/WordCount.Solution/WordCount/obj/Debug/netcoreapp1.1/WordCount.pdb
+/Users/Guest/Desktop/CSharp-week-1-project/WordCount/bin/Debug/netcoreapp1.1/WordCount.deps.json
+/Users/Guest/Desktop/CSharp-week-1-project/WordCount/bin/Debug/netcoreapp1.1/WordCount.dll
+/Users/Guest/Desktop/CSharp-week-1-project/WordCount/bin/Debug/netcoreapp1.1/WordCount.pdb
+/Users/Guest/Desktop/CSharp-week-1-project/WordCount/obj/Debug/netcoreapp1.1/WordCount.AssemblyInfo.cs
+/Users/Guest/Desktop/CSharp-week-1-project/WordCount/obj/Debug/netcoreapp1.1/WordCount.dll
+/Users/Guest/Desktop/CSharp-week-1-project/WordCount/obj/Debug/netcoreapp1.1/WordCount.pdb
