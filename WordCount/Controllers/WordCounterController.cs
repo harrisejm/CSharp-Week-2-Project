@@ -4,15 +4,15 @@ using WordCounter.Models;
 
 namespace WordCounter.Controllers
 {
-    public class WordController : Controller
+    public class WordCounterController : Controller
     {
 
-        [HttpGet("/words")]
-        public ActionResult Index()
-        {
-            List<Item> allItems = Item.GetAll();
-            return View(allItems);
-        }
+        // [HttpGet("/words")]
+        // public ActionResult Index()
+        // {
+        //     List<RepeatCounter> allItems = RepeatCounter.GetAll();
+        //     return View(allWords);
+        // }
 
         [HttpGet("/words/new")]
         public ActionResult CreateForm()
@@ -20,14 +20,15 @@ namespace WordCounter.Controllers
             return View();
         }
 
-        [HttpPost("/words")]
-        public ActionResult Create()
-        {
-          Item newWord= new Item (Request.Form["new-item"]);
-          //newItem.Save();
-          List<Item> allItems = Item.GetAll();
-          return View("Index", allItems);
-        }
+
+        // [HttpPost("/words")]
+        // public ActionResult Create()
+        // {
+        //   RepeatCounter newWord= new RepeatCounter(Request.Form["new-word"]);
+        //   //newItem.Save();
+        //   List<RepeatCounter> allItems = Item.GetAll();
+        //   return View("Index", allItems);
+        // }
 
         // [HttpPost("/items/delete")]
         // public ActionResult DeleteAll()

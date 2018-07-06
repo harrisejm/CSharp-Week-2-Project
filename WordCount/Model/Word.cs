@@ -6,6 +6,7 @@ namespace WordCounter.Models
   {
     public string _userWord;
     public string _userString;
+    private static List<RepeatCounter> _wordInstances = new List<RepeatCounter> {};
     public RepeatCounter(string userWord, string userString)
     {
       _userWord = userWord.ToLower();
@@ -26,6 +27,27 @@ namespace WordCounter.Models
       }
       return _userWord + " appears " + finalOutput + " times.";
     }
+
+    public static List<RepeatCounter> GetAll()
+        {
+          return _wordInstances;
+        }
+        public void Save()
+        {
+          _wordInstances.Add(this);
+        }
+        public static void ClearAll()
+        {
+          _wordInstances.Clear();
+        }
+
+
+
+
+
+
+
+
 
   //  test to see if MStest is working
     public string testOutput()
