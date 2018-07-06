@@ -6,37 +6,28 @@ using WordCounter.Models;
 
 namespace WordCounter.Tests
 {
-    [TestClass]
-    public class WordCounterControllerTest
+  [TestClass]
+  public class WordCounterControllerTest
+  {
+    [TestMethod]
+    public void IndexWords_ReturnsCorrectView_True()
+    {
+      WordCounterController controller = new WordCounterController();
+
+      ActionResult indexView = controller.Index();
+
+      Assert.IsInstanceOfType(indexView, typeof(ViewResult));
+    }
+
+    [TestMethod]
+    public void CreateFormWords_ReturnsCorrectView_True()
     {
 
-      [TestMethod]
-      public void IndexWords_ReturnsCorrectView_True()
-      {
-        //Arrange
-        WordCounterController controller = new WordCounterController();
+      WordCounterController controller = new WordCounterController();
 
-        //Act
-        ActionResult indexView = controller.Index();
+      ActionResult CreatFormView = controller.CreateForm();
 
-        //Assert
-        Assert.IsInstanceOfType(indexView, typeof(ViewResult));
-      }
-
-      [TestMethod]
-      public void CreateFormWords_ReturnsCorrectView_True()
-      {
-        //Arrange
-        WordCounterController controller = new WordCounterController();
-
-        //Act
-        ActionResult CreatFormView = controller.CreateForm();
-
-        //Assert
-        Assert.IsInstanceOfType(CreatFormView, typeof(ViewResult));
-      }
-
-
-
+      Assert.IsInstanceOfType(CreatFormView, typeof(ViewResult));
     }
   }
+}
