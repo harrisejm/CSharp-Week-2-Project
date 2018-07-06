@@ -2,23 +2,19 @@
   Layout = "_Layout";
 }
 
+<p>Enter a word and a sentence below. Click the submit button to find out how may times the word appears in the sentence</p>
 
-<p>Enter a word and a sentence below. Click the submit button to find out hoe may times the word appears in the sentence</p>
-
-
-<form action="/words" method="post">
-
+<form action="/repeatCounter" method="post">
 
   <div class='form-group'>
-    <label for='firstWord'>Enter Word</label>
-    <input id='firstWord' name='firstWord' class='form-control' type='text'>
+    <label for='new-word'>Enter SINGLE Word</label>
+    <input id='new-word' name='new-word' class='form-control' type='text'>
   </div>
 
   <div class='form-group'>
-    <label for='testSentence'>Enter Sentence</label>
-    <input id='testSentence' name='testSentence' class='form-control' type='text'>
+    <label for='new-sentence'>Enter Sentence</label>
+    <input id='new-sentence' name='new-sentence' class='form-control' type='text'>
   </div>
-
 
   <button type="submit">Submit</button>
 </form>

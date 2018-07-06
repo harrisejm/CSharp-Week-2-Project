@@ -27,7 +27,7 @@ namespace WordCounter.Tests
       RepeatCounter word = new RepeatCounter("Hello", "hello World hello");
       Assert.AreEqual("\"" + "hello" + "\"" + " appears 2 times in the sentence: " + "\"" + "hello world hello" + "\"", word.test());
     }
-    
+
     [TestMethod]
     public void testFinalOutput1()
     {

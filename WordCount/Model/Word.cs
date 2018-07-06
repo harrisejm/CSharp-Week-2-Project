@@ -14,7 +14,7 @@ namespace WordCounter.Models
       _userWord = userWord.ToLower();
       _userString = userString.ToLower();
     }
-//////
+    //////
     public string GetWord()
     {
       return _userWord;
@@ -23,7 +23,7 @@ namespace WordCounter.Models
     {
       _userWord = newWord;
     }
-
+    ///
     public string GetSentence()
     {
       return _userString;
@@ -32,7 +32,7 @@ namespace WordCounter.Models
     {
       _userString= newString;
     }
-/////
+    /////
     public string test()
     {
       int finalOutput = 0;
@@ -55,18 +55,16 @@ namespace WordCounter.Models
       }
       else
       {
-      return "\"" + _userWord + "\"" + " appears " + finalOutput + " times in the sentence: " + "\"" + _userString + "\"";
-    }
+        return "\"" + _userWord + "\"" + " appears " + finalOutput + " times in the sentence: " + "\"" + _userString + "\"";
+      }
     }
 
-// ////
-
+    // ////
 
     public static List<RepeatCounter> GetAll()
     {
       return _wordInstances;
     }
-
 
     public void Save()
     {
@@ -78,24 +76,10 @@ namespace WordCounter.Models
       _wordInstances.Clear();
     }
 
-
     //  test to see if MStest is working
     public string testOutput()
     {
       return _userWord + _userString;
     }
   }
-  //
-  // class OutputWords
-  // {
-  //   static void Main()
-  //   {
-  //     Console.WriteLine("Enter Word");
-  //     string userInputWord = Console.ReadLine();
-  //     Console.WriteLine("Enter string");
-  //     string userInputString = Console.ReadLine();
-  //     RepeatCounter word = new RepeatCounter(userInputWord, userInputString);
-  //     Console.WriteLine(word.test());
-  //   }
-  // }
 }

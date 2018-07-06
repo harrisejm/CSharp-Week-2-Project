@@ -2,20 +2,12 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace WordCounter.Controllers
 {
-    public class HomeController : Controller
+  public class HomeController : Controller
+  {
+    [HttpGet("/")]
+    public ActionResult Index()
     {
-
-        [HttpGet("/")]
-        public ActionResult Index()
-        {
-            return View();
-        }
-
-        // public ActionResult Index()
-        // {
-        //   return new EmptyResult();
-        // }
-
-
+      return View();
     }
+  }
 }

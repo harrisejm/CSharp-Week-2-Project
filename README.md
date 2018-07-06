@@ -28,17 +28,36 @@ This web app allows the user to enter an initial word and compare it to a user i
 
 - 4.) User inputs will not be affected by case-sensitivity or punctuation. The number of times the inputed word appears in the inputed string will be returned regardless of both of these differences.
 
-        - Example input:
-          Word: "hello"
-          String: "Hello. World? Hello: helLO! HELLO; hellO!"
+    - Example input:
+      Word: "hello"
+      String: "Hello. World? Hello: helLO! HELLO; hellO!"
 
-        - Example output: "hello appeared 5 times"
+    - Example output: "hello appeared 5 times"
 
+- 5.) Based on the inputs, the outputted results will be added to a list the user can view.
+
+    - Example input:
+        - First Entry:
+            - Word: "hello"
+            - String: "Hello. World? Hello: helLO! HELLO; hellO!"
+
+        - Second Entry:
+            - Word: "Eddie"
+            - String: "Hi, Eddie. It's Eddie, right?"
+
+    - Example output:
+        - List:   
+          - "hello" appears 5 times in the sentence: "hello. world? hello: hello! hello; hello!"
+          - "eddie" appears 2 times in the sentence: "hi, eddie. it's eddie, right?"
+
+- 6.) The user will also have the ability to delete the entire list and start from the beginning.
 
 ## Setup/Installation Requirements
 
 * Clone his repository
 * Save to Desktop
+* Open folder and navigate to the WordCount directory
+* Enter "dotnet run" and enter "http://localhost:5000" into the web browser. Enter "dotnet restore" before "dotnet run" if page does not open
 
 
 ## Technologies Used

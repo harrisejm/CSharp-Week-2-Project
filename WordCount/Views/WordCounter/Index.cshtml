@@ -2,14 +2,13 @@
   Layout = "_Layout";
 }
 
-
 <ul>
   @foreach(var word in Model)
   {
     <li>@word.test()</li>
   }
 </ul>
-<p><a href="/words/new">Check Another Word</a></p>
-<form action="/words/delete" method="post">
+<p><a href="/repeatCounter/new">Check Another Word</a></p>
+<form action="/repeatCounter/delete" method="post">
   <button type="submit" name="button">Clear All Items</button>
 </form>
