@@ -6,16 +6,33 @@ namespace WordCounter.Models
   {
     public string _userWord;
     public string _userString;
-    public string _finalOutput;
+    public string _results;
     private static List<RepeatCounter> _wordInstances = new List<RepeatCounter> {};
+
     public RepeatCounter(string userWord, string userString)
     {
       _userWord = userWord.ToLower();
       _userString = userString.ToLower();
-
-
+    }
+//////
+    public string GetWord()
+    {
+      return _userWord;
+    }
+    public void SetWord(string newWord)
+    {
+      _userWord = newWord;
     }
 
+    public string GetSentence()
+    {
+      return _userString;
+    }
+    public void SetSentence(string newString)
+    {
+      _userString= newString;
+    }
+/////
     public string test()
     {
       int finalOutput = 0;
@@ -27,18 +44,22 @@ namespace WordCounter.Models
         {
           finalOutput += 1;
         }
+        else
+        {
+          finalOutput += 0;
+        }
       }
-      return _userWord + " appears " + finalOutput + " times.";
+      if (finalOutput == 1 )
+      {
+        return "\"" + _userWord + "\"" + " appears " + finalOutput + " time in the sentence: " + "\"" + _userString + "\"";
+      }
+      else
+      {
+      return "\"" + _userWord + "\"" + " appears " + finalOutput + " times in the sentence: " + "\"" + _userString + "\"";
+    }
     }
 
-    public string GetWord()
-        {
-          return _userWord;
-        }
-    public void SetDescription(string newWord)
-        {
-          _userWord = newWord;
-        }
+// ////
 
 
     public static List<RepeatCounter> GetAll()
@@ -58,14 +79,7 @@ namespace WordCounter.Models
     }
 
 
-
-
-
-
-
-
-
-  //  test to see if MStest is working
+    //  test to see if MStest is working
     public string testOutput()
     {
       return _userWord + _userString;
