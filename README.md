@@ -1,12 +1,12 @@
-# Word Counter
+# Word Counter Part 2
 
-#### Epicodus Wod Counter (for Epicodus), 6/29/18
+#### Epicodus Word Counter (for Epicodus), 7/6/18
 #### By Eddie Harris
 
 
 ## Description
 
-This is console app allows the user to enter an initial word and compare it to a user inputed string. The app will then count the number of times the initial word appears in the string.
+This web app allows the user to enter an initial word and compare it to a user inputed string. The app will then count the number of times the initial word appears in the string.
 
 ## Specifications
 
@@ -39,7 +39,6 @@ This is console app allows the user to enter an initial word and compare it to a
 
 * Clone his repository
 * Save to Desktop
-* Open index.html and run in web browser
 
 
 ## Technologies Used

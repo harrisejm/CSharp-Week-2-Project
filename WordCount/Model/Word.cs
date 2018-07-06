@@ -1,6 +1,6 @@
 using System;
 using System.Collections.Generic;
-namespace WordCounter
+namespace WordCounter.Models
 {
   public class RepeatCounter
   {
@@ -33,17 +33,17 @@ namespace WordCounter
       return _userWord + _userString;
     }
   }
-
-  class OutputWords
-  {
-    static void Main()
-    {
-      Console.WriteLine("Enter Word");
-      string userInputWord = Console.ReadLine();
-      Console.WriteLine("Enter string");
-      string userInputString = Console.ReadLine();
-      RepeatCounter word = new RepeatCounter(userInputWord, userInputString);
-      Console.WriteLine(word.test());
-    }
-  }
+  //
+  // class OutputWords
+  // {
+  //   static void Main()
+  //   {
+  //     Console.WriteLine("Enter Word");
+  //     string userInputWord = Console.ReadLine();
+  //     Console.WriteLine("Enter string");
+  //     string userInputString = Console.ReadLine();
+  //     RepeatCounter word = new RepeatCounter(userInputWord, userInputString);
+  //     Console.WriteLine(word.test());
+  //   }
+  // }
 }
