@@ -6,11 +6,14 @@ namespace WordCounter.Models
   {
     public string _userWord;
     public string _userString;
+    public string _finalOutput;
     private static List<RepeatCounter> _wordInstances = new List<RepeatCounter> {};
     public RepeatCounter(string userWord, string userString)
     {
       _userWord = userWord.ToLower();
       _userString = userString.ToLower();
+
+
     }
 
     public string test()
@@ -28,18 +31,31 @@ namespace WordCounter.Models
       return _userWord + " appears " + finalOutput + " times.";
     }
 
+    public string GetWord()
+        {
+          return _userWord;
+        }
+    public void SetDescription(string newWord)
+        {
+          _userWord = newWord;
+        }
+
+
     public static List<RepeatCounter> GetAll()
-        {
-          return _wordInstances;
-        }
-        public void Save()
-        {
-          _wordInstances.Add(this);
-        }
-        public static void ClearAll()
-        {
-          _wordInstances.Clear();
-        }
+    {
+      return _wordInstances;
+    }
+
+
+    public void Save()
+    {
+      _wordInstances.Add(this);
+    }
+
+    public static void ClearAll()
+    {
+      _wordInstances.Clear();
+    }
 
 
 
